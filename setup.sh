@@ -19,3 +19,19 @@ git config --global user.email "oleh.palianytsia@gmail.com"
 git config --global user.name "Oleh Palianytsia"
 
 
+mkdir -p ~/devel
+cd ~/devel
+
+git clone https://github.com/emacs-mirror/emacs.git
+
+cd emacs
+git checkout emacs-25
+
+sudo apt-get install aptitude
+sudo aptitude build-dep emacs24
+
+./autogen.sh
+./configure --with-png=no --with-tiff=no
+make -j8
+sudo make install
+cd

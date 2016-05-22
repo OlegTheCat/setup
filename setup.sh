@@ -1,22 +1,6 @@
 #!/bin/bash
 
 #
-# Skype & Dropbox
-#
-
-wget -O skype.deb https://get.skype.com/go/getskype-linux-ubuntu-64
-wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
-
-sudo apt-get update
-
-sudo dpkg -i skype.deb
-sudo dpkg -i dropbox.deb
-
-sudo apt-get install -f
-
-rm skype.deb dropbox.deb
-
-#
 # Git
 #
 
@@ -53,3 +37,20 @@ git clone --recursive https://github.com/OlegTheCat/.emacs.d.git
 
 sudo mkdir -p /media/files
 sudo echo "/dev/sda3   /media/files  ntfs    defaults    0   0" >> /etc/fstab
+
+#
+# Skype & Dropbox
+#
+
+wget -O skype.deb https://get.skype.com/go/getskype-linux-ubuntu-64
+wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
+
+sudo apt-get update
+
+sudo dpkg -i skype.deb
+sudo dpkg -i dropbox.deb
+
+sudo apt-get install -f
+
+rm skype.deb dropbox.deb
+

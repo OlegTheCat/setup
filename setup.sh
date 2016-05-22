@@ -11,3 +11,11 @@ sudo dpkg -i dropbox.deb
 sudo apt-get install -f
 
 rm skype.deb dropbox.deb
+
+
+sudo apt-get install git gitk
+
+git config --global user.email "oleh.palianytsia@gmail.com"
+git config --global user.name "Oleh Palianytsia"
+
+

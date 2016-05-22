@@ -63,6 +63,14 @@ sudo dpkg -i steam.deb
 rm steam.deb
 
 #
+# Lein
+#
+
+wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+sudo mv lein /usr/bin/
+sudo chmod +x /usr/bin/lein
+
+#
 # Misc
 #
 

@@ -45,7 +45,7 @@ sudo aptitude build-dep emacs24
 make -j8
 sudo make install
 cd
-git clone https://github.com/OlegTheCat/.emacs.d.git
+git clone --recursive https://github.com/OlegTheCat/.emacs.d.git
 
 #
 # Fstab config

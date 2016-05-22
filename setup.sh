@@ -41,7 +41,7 @@ sudo apt-get install aptitude
 sudo aptitude build-dep emacs24
 
 ./autogen.sh
-./configure --with-png=no --with-tiff=no
+./configure
 make -j8
 sudo make install
 cd

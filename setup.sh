@@ -59,5 +59,11 @@ rm skype.deb dropbox.deb
 #
 
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
-dpkg -i steam.deb
+sudo dpkg -i steam.deb
 rm steam.deb
+
+#
+# Misc
+#
+
+sudo apt-get install screen

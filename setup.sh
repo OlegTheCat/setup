@@ -75,3 +75,4 @@ sudo chmod +x /usr/bin/lein
 #
 
 sudo apt-get install screen
+sudo apt-get install shutter

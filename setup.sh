@@ -8,6 +8,7 @@ sudo apt-get install git gitk
 
 git config --global user.email "oleh.palianytsia@gmail.com"
 git config --global user.name "Oleh Palianytsia"
+git config --global push.default simple
 
 #
 # Emacs

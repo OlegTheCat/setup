@@ -4,7 +4,10 @@
 # Git
 #
 
-sudo apt-get install git gitk
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install git gitk -y
 
 git config --global user.email "oleh.palianytsia@gmail.com"
 git config --global user.name "Oleh Palianytsia"
@@ -22,8 +25,8 @@ git clone https://github.com/emacs-mirror/emacs.git
 cd emacs
 git checkout emacs-25
 
-sudo apt-get install aptitude
-sudo aptitude build-dep emacs24
+sudo apt-get install aptitude -y
+sudo aptitude build-dep emacs24 -y
 
 ./autogen.sh
 ./configure
@@ -75,5 +78,5 @@ sudo chmod +x /usr/bin/lein
 # Misc
 #
 
-sudo apt-get install screen
-sudo apt-get install shutter
+sudo apt-get install screen -y
+sudo apt-get install shutter -y
